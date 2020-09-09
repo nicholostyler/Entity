@@ -24,19 +24,7 @@ namespace Entity.DataModels
 
         public IEnumerable<Address> RetrieveByCustomerId(int customerId)
         {
-            var addressList = new List<Address>
-            {
-                new Address(
-                1,
-                AddressType.Street,
-                "Bag End",
-                "Bagshot Row",
-                "Hobbitton",
-                "Shire",
-                "Middle Earth",
-                "20619"
-                )
-            };
+            var addressList = new List<Address>();
 
             return addressList;
     }

@@ -10,7 +10,9 @@ namespace EntityTests
         public void FullNameTestValid()
         {
             // arrange
-            Customer customer = new Customer("Bilbo", "Baggins");
+            Customer customer = new Customer(1);
+            customer.FirstName = "Bilbo";
+            customer.LastName = "Baggins";
 
             string expected = "Baggins, Bilbo";
 
@@ -25,7 +27,9 @@ namespace EntityTests
         public void LastNameIsEmpty()
         {
             // arrange
-            Customer customer = new Customer("Baggins", "Baggins");
+            Customer customer = new Customer(1);
+            customer.FirstName = "Bilbo";
+            customer.LastName = "Baggins";
 
             string expected = "Baggins";
 
